@@ -14,6 +14,13 @@ Another example from the same text.
 ![Output2](/assets/output2.png)
 
 ## Setup
+Before cloning this repo, you need to have [Ollama](ollama.com) on your system. You can also choose the models from [ollam library](ollama.com/library).
+```bash
+pip install ollama
+ollama pull phi3
+```
+LLM models to choose from `llama3`, `mistral`, and `phi3`. The app works with larger models with 70b parameters but needs more RAM and GPU.
+
 To setup this repository, you need to have anaconda installed on your system.
 
 Clone this repository in your system:
@@ -26,7 +33,7 @@ conda activate Chat_with_PDF
 
 To install the required libraries:
 ```bash
-pip install numpy sentence-transformers pypdf2 streamlit ollama
+pip install numpy sentence-transformers pypdf2 streamlit
 ```
 To run it locally:
 ```bash
